@@ -1,17 +1,32 @@
 #app {
+	width: 1000px;
 	margin: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	background-color: purple;
+	margin: 0 auto;
 }
 
-.game-holder {
-	width: 150px;
-	margin-bottom: 30px;
+.camping-holder {
+	width: 300px;
+	margin-bottom: 50px;
 	border-bottom: solid 1px #000;
+	background-color: hotpink;
 }
 
 .brief-rating {
-	font-size: 9px;
+	width: 200px;
+	font-size: 20px;
+	margin-bottom: 100px;
+	background-color: teal;
 }
 
 .brief-des {
-	margin-bottom: 10px;
+	width: 200px;
+	margin-bottom: 20px;
+	background-color: chartreuse;
 }

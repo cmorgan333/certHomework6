@@ -55,7 +55,7 @@ var TOOLS = [
     toolPrice: "$239.00",
 },
 {
-    // ====STOCE THREE
+    // ====STOVE THREE
     toolTitle: "JetBoil Stove",
     toolThumbImg: "stove-jetboil_300x300.jpg",
     toolFullImg: "jetboil-stove.jpeg",
@@ -92,7 +92,7 @@ var TOOLS = [
 {
     // ====SLEEPING BAG THREE
     toolTitle: "Kelty Sleeping Bag",
-    toolThumbImg: "sleepingbag-kelty_300x300.jpg",
+    toolThumbImg: "sleepingbag-kelty_300x300.jpeg",
     toolFullImg: "marmot-tent.jpeg",
     toolBriefDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
@@ -104,7 +104,7 @@ var TOOLS = [
 {
     // ====COT ONE
     toolTitle: "Alps Cot",
-    toolThumbImg: "cot-alps_300x300.jpg",
+    toolThumbImg: "cotThumb1.jpg",
     toolFullImg: "alps-cot.jpeg",
     toolBriefDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
@@ -141,10 +141,10 @@ var TOOLS = [
 
 function loadData() {
 $.each(TOOLS, function(index, tool) {
-    $("#app").append(`<div class="camping-holder">
+    $("#app").append(`<div id="${index}" class="camping-holder">
     <h4>${tool.toolTitle}</h4>
     <div class="tool-image">
-        <img src="images/campingStuff-assets/${tool.toolThumbImg}" alt="${tool.toolTitle}">
+        <img src="images/campingStuff-assets/${tool.toolThumbImg}" alt="${tool.toolTitle}"/>
     </div>
     <div class="brief-rating">
         <div class="brief-des">
