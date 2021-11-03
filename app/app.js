@@ -141,7 +141,18 @@ var TOOLS = [
 
 function loadData() {
 $.each(TOOLS, function(index, tool) {
-console.log(tool.toolTitle);
+    $("#app").append(`<div class="camping-holder">
+    <h4>${tool.toolTitle}</h4>
+    <div class="tool-image">
+        <img src="images/campingStuff-assets/${tool.toolThumbImg}" alt="${tool.toolTitle}">
+    </div>
+    <div class="brief-rating">
+        <div class="brief-des">
+     ${tool.toolBriefDescription}
+        </div>
+        <div class="price">Price: ${tool.toolPrice} </div>
+    </div>
+</div>`);
 });
 }
 
@@ -150,4 +161,4 @@ function initListeners() {}
 $(document).ready(function() {
 loadData();
     // initListeners();
-})
+});
