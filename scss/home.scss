@@ -7,26 +7,24 @@
 	align-items: center;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
-	background-color: purple;
 	margin: 0 auto;
 }
 
 .camping-holder {
-	width: 300px;
+	width: 250px;
 	margin-bottom: 50px;
+	margin-left: 50px;
 	border-bottom: solid 1px #000;
-	background-color: hotpink;
+	cursor: pointer;
 }
 
 .brief-rating {
 	width: 200px;
 	font-size: 20px;
 	margin-bottom: 100px;
-	background-color: teal;
 }
 
 .brief-des {
 	width: 200px;
 	margin-bottom: 20px;
-	background-color: chartreuse;
 }

@@ -2,7 +2,7 @@ var TOOLS = [
 {
     // ===TENT ONE
     toolTitle: "Marmot Tent",
-    toolThumbImg: "tent-marmot_300x300.jpg",
+    toolThumbImg: "marmottent-thumb.jpg",
     toolFullImg: "marmot-tent.jpeg",
     toolBriefDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
@@ -13,7 +13,7 @@ var TOOLS = [
 {
     // ======TENT TWO
     toolTitle: "Nemo Tent",
-    toolThumbImg: "tent-nemo_300x300.jpg",
+    toolThumbImg: "nemotent-thumb.jpg",
     toolFullImg: "nemo-tent.jpeg",
     toolBriefDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
@@ -24,8 +24,8 @@ var TOOLS = [
 {
     // ====TENT THREE
     toolTitle: "Big Agnes Tent",
-    toolThumbImg: "tent-bigag_300x300.jpg",
-    toolFullImg: "bigagnes-tent.jpeg",
+    toolThumbImg: "bigagnestent-thumb.jpg",
+    toolFullImg: "bigagnestent-thumb.jpg",
     toolBriefDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
     toolDescription:
@@ -35,7 +35,7 @@ var TOOLS = [
 {
     // ====STOVE ONE
     toolTitle: "Coleman Stove",
-    toolThumbImg: "stove-coleman_300x300.jpg",
+    toolThumbImg: "colemanstove-thumb.jpg",
     toolFullImg: "coleman-stove.jpeg",
     toolBriefDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
@@ -46,7 +46,7 @@ var TOOLS = [
 {
     // ====STOVE TWO
     toolTitle: "Eureka Stove",
-    toolThumbImg: "stove-eureka_300x300.jpg",
+    toolThumbImg: "eurekastove-thumb.jpg",
     toolFullImg: "eureka-stove.jpeg",
     toolBriefDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
@@ -57,7 +57,7 @@ var TOOLS = [
 {
     // ====STOVE THREE
     toolTitle: "JetBoil Stove",
-    toolThumbImg: "stove-jetboil_300x300.jpg",
+    toolThumbImg: "jetboilstove-thumb.jpg",
     toolFullImg: "jetboil-stove.jpeg",
     toolBriefDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
@@ -69,7 +69,7 @@ var TOOLS = [
 {
     // ====SLEEPING BAG ONE
     toolTitle: "Marmot Sleeping Bag",
-    toolThumbImg: "sleepingbag-marmot_300x300.jpg",
+    toolThumbImg: "marmotsleepingbag-thumb.jpg",
     toolFullImg: "sleepingbag-marmot.jpeg",
     toolBriefDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
@@ -80,7 +80,7 @@ var TOOLS = [
 {
     // ====SLEEPING BAG TWO
     toolTitle: "Nemo Sleeping Bag",
-    toolThumbImg: "sleepingbag-nemo_300x300.jpg",
+    toolThumbImg: "nemosleepingbag-thumb.jpg",
     toolFullImg: "nemo-sleepingbag.jpeg",
     toolBriefDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
@@ -92,7 +92,7 @@ var TOOLS = [
 {
     // ====SLEEPING BAG THREE
     toolTitle: "Kelty Sleeping Bag",
-    toolThumbImg: "sleepingbag-kelty_300x300.jpeg",
+    toolThumbImg: "keltysleepingbag-thumb.jpg",
     toolFullImg: "marmot-tent.jpeg",
     toolBriefDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
@@ -104,7 +104,7 @@ var TOOLS = [
 {
     // ====COT ONE
     toolTitle: "Alps Cot",
-    toolThumbImg: "cotThumb1.jpg",
+    toolThumbImg: "cotthumb.jpg",
     toolFullImg: "alps-cot.jpeg",
     toolBriefDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
@@ -116,7 +116,7 @@ var TOOLS = [
 {
     // ====COT TWO
     toolTitle: "Helinox Cot",
-    toolThumbImg: "cot-helinox_300x300.jpg",
+    toolThumbImg: "helinoxcot-thumb.jpg",
     toolFullImg: "helinox-cot.jpeg",
     toolBriefDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
@@ -128,7 +128,7 @@ var TOOLS = [
 {
     // ====COT THREE
     toolTitle: "Kingdom Cot",
-    toolThumbImg: "cot-kingdom_300x300.jpg",
+    toolThumbImg: "kingdomcot-thumb.jpg",
     toolFullImg: "kingdom-cot.jpeg",
     toolBriefDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
