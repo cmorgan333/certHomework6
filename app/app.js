@@ -25,7 +25,7 @@ var TOOLS = [
     // ====TENT THREE
     toolTitle: "Big Agnes Tent",
     toolThumbImg: "bigagnestent-thumb.jpg",
-    toolFullImg: "bigagnestent-thumb.jpg",
+    toolFullImg: "bigagnes-tent.jpeg",
     toolBriefDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
     toolDescription:
@@ -70,7 +70,7 @@ var TOOLS = [
     // ====SLEEPING BAG ONE
     toolTitle: "Marmot Sleeping Bag",
     toolThumbImg: "marmotsleepingbag-thumb.jpg",
-    toolFullImg: "sleepingbag-marmot.jpeg",
+    toolFullImg: "marmot-sleepingbag.jpeg",
     toolBriefDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
     toolDescription:
@@ -93,7 +93,7 @@ var TOOLS = [
     // ====SLEEPING BAG THREE
     toolTitle: "Kelty Sleeping Bag",
     toolThumbImg: "keltysleepingbag-thumb.jpg",
-    toolFullImg: "marmot-tent.jpeg",
+    toolFullImg: "kelty-sleepingbag.jpeg",
     toolBriefDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
     toolDescription:
@@ -160,21 +160,31 @@ initListeners();
 function initListeners() {
     $(".camping-holder").click(function(e) {
         let toolIndex = e.currentTarget.id;
-        console.log(toolIndex);
+        
         $("#app").html(`<div class="tool">
-        <h2>Marmot Tent</h2>
+        <h2>${TOOLS[toolIndex].toolTitle}</h2>
         <div class="toolImg">
-            <img src="images/fullsize/marmot-tent.jpeg" alt="Marmot Tent">
+            <img src="images/fullsize/${TOOLS[toolIndex].toolFullImg}" alt="Marmot Tent">
         </div>
         <div class="gameDes">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia doloremque, numquam ipsa sunt enim atque. Quibusdam numquam neque, aliquid, minima nihil quaerat porro sit officiis magni quis explicabo. Doloribus, tenetur!
+        ${TOOLS[toolIndex].toolDescription}
         </div>
-        <div class="price">Price: $139.00</div>
+        <div class="price">Price: ${TOOLS[toolIndex].toolPrice}</div>
+        <div class="close">CLOSE</div>
     </div>`);
+
+    addCloseListener();
     });
 }
 
+function addCloseListener(){
+    $(".close").click(function(){
+$("#app").html("");
+loadData();
+    })
+}
+
 $(document).ready(function() {
-// loadData();
+loadData();
    
 });
