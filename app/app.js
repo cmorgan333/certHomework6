@@ -19,7 +19,7 @@ var TOOLS = [
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
     toolDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi recusandae omnis qui accusamus eos atque deleniti expedita magnam quasi perferendis? Facilis ducimus cumque nihil saepe!",
-    toolPrice: "$239.00",
+    toolPrice: "$350.00",
 },
 {
     // ====TENT THREE
@@ -30,7 +30,7 @@ var TOOLS = [
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
     toolDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi recusandae omnis qui accusamus eos atque deleniti expedita magnam quasi perferendis? Facilis ducimus cumque nihil saepe!",
-    toolPrice: "$239.00",
+    toolPrice: "$199.00",
 },
 {
     // ====STOVE ONE
@@ -41,7 +41,7 @@ var TOOLS = [
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
     toolDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi recusandae omnis qui accusamus eos atque deleniti expedita magnam quasi perferendis? Facilis ducimus cumque nihil saepe!",
-    toolPrice: "$239.00",
+    toolPrice: "$80.00",
 },
 {
     // ====STOVE TWO
@@ -52,7 +52,7 @@ var TOOLS = [
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
     toolDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi recusandae omnis qui accusamus eos atque deleniti expedita magnam quasi perferendis? Facilis ducimus cumque nihil saepe!",
-    toolPrice: "$239.00",
+    toolPrice: "$64.99",
 },
 {
     // ====STOVE THREE
@@ -63,7 +63,7 @@ var TOOLS = [
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
     toolDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi recusandae omnis qui accusamus eos atque deleniti expedita magnam quasi perferendis? Facilis ducimus cumque nihil saepe!",
-    toolPrice: "$239.00",
+    toolPrice: "$86.00",
 },
 
 {
@@ -75,7 +75,7 @@ var TOOLS = [
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
     toolDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi recusandae omnis qui accusamus eos atque deleniti expedita magnam quasi perferendis? Facilis ducimus cumque nihil saepe!",
-    toolPrice: "$239.00",
+    toolPrice: "$126.00",
 },
 {
     // ====SLEEPING BAG TWO
@@ -86,7 +86,7 @@ var TOOLS = [
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
     toolDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi recusandae omnis qui accusamus eos atque deleniti expedita magnam quasi perferendis? Facilis ducimus cumque nihil saepe!",
-    toolPrice: "$239.00",
+    toolPrice: "$156.00",
 },
 
 {
@@ -98,7 +98,7 @@ var TOOLS = [
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
     toolDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi recusandae omnis qui accusamus eos atque deleniti expedita magnam quasi perferendis? Facilis ducimus cumque nihil saepe!",
-    toolPrice: "$239.00",
+    toolPrice: "$112.00",
 },
 
 {
@@ -110,7 +110,7 @@ var TOOLS = [
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
     toolDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi recusandae omnis qui accusamus eos atque deleniti expedita magnam quasi perferendis? Facilis ducimus cumque nihil saepe!",
-    toolPrice: "$239.00",
+    toolPrice: "$86.00",
 },
 
 {
@@ -122,7 +122,7 @@ var TOOLS = [
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
     toolDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi recusandae omnis qui accusamus eos atque deleniti expedita magnam quasi perferendis? Facilis ducimus cumque nihil saepe!",
-    toolPrice: "$239.00",
+    toolPrice: "$54.00",
 },
 
 {
@@ -134,7 +134,7 @@ var TOOLS = [
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi.",
     toolDescription:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo laudantium repellendus, voluptas modi recusandae omnis qui accusamus eos atque deleniti expedita magnam quasi perferendis? Facilis ducimus cumque nihil saepe!",
-    toolPrice: "$239.00",
+    toolPrice: "$82.00",
 },
 
 ];
@@ -154,11 +154,27 @@ $.each(TOOLS, function(index, tool) {
     </div>
 </div>`);
 });
+initListeners();
 }
 
-function initListeners() {}
+function initListeners() {
+    $(".camping-holder").click(function(e) {
+        let toolIndex = e.currentTarget.id;
+        console.log(toolIndex);
+        $("#app").html(`<div class="tool">
+        <h2>Marmot Tent</h2>
+        <div class="toolImg">
+            <img src="images/fullsize/marmot-tent.jpeg" alt="Marmot Tent">
+        </div>
+        <div class="gameDes">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia doloremque, numquam ipsa sunt enim atque. Quibusdam numquam neque, aliquid, minima nihil quaerat porro sit officiis magni quis explicabo. Doloribus, tenetur!
+        </div>
+        <div class="price">Price: $139.00</div>
+    </div>`);
+    });
+}
 
 $(document).ready(function() {
-loadData();
-    // initListeners();
+// loadData();
+   
 });
